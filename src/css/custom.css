@@ -376,5 +376,8 @@
 /* Import responsive design system */
 @import './responsive.css';
 
+/* Import ultimate mobile optimization - HIGHEST PRIORITY */
+@import './mobile-ultimate.css';
+
 /* Import mobile overrides with highest priority */
 @import './mobile-override.css';
