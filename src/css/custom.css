@@ -373,6 +373,9 @@
   display: none !important;
 }
 
+/* Import Hybrid Responsive System - PC to Mobile Complete Solution */
+@import './hybrid-responsive.css';
+
 /* Import responsive design system */
 @import './responsive.css';
 
