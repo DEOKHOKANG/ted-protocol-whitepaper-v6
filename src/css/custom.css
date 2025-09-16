@@ -373,5 +373,8 @@
   display: none !important;
 }
 
+/* Import responsive design system */
+@import './responsive.css';
+
 /* Import mobile overrides with highest priority */
 @import './mobile-override.css';

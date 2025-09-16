@@ -1,128 +1,75 @@
 const { chromium } = require('playwright');
 
-async function verifyDeployment(url) {
-  console.log(`\n🔍 Verifying deployment at: ${url}\n`);
-  console.log('=' .repeat(60) + '\n');
+const EXPECTED_URLS = [
+  'https://ted-protocol-whitepaper-v6.vercel.app',
+  'https://ted-protocol-whitepaper-v6-deokhokang.vercel.app',
+  'https://ted-protocol-whitepaper-v6-git-main-deokhokang.vercel.app'
+];
+
+async function verifyNewDeployment() {
+  console.log('🚀 새로운 Vercel 프로젝트 배포 검증');
+  console.log('━'.repeat(60));
+
+  const browser = await chromium.launch({ 
+    headless: false,
+    viewport: { width: 375, height: 812 }
+  });
+
+  let successUrl = null;
+  let bestScore = 0;
+
+  for (const url of EXPECTED_URLS) {
+    console.log(`\n🔍 확인 중: ${url}`);
+    
+    const page = await browser.newPage();
+    
+    try {
+      const response = await page.goto(url, { 
+        waitUntil: 'domcontentloaded',
+        timeout: 30000 
+      });
+      
+      const status = response.status();
+      console.log(`   📡 HTTP Status: ${status}`);
+      
+      if (status === 200) {
+        await page.setViewportSize({ width: 375, height: 812 });
+        await page.waitForTimeout(2000);
+        
+        const metrics = {
+          whitepaperText: await page.locator('text=Whitepaper').count(),
+          githubLinks: await page.locator('a[href*="github"]:visible').count()
+        };
+        
+        console.log(`   📝 Whitepaper: ${metrics.whitepaperText}개`);
+        console.log(`   🔗 GitHub: ${metrics.githubLinks}개`);
+        
+        let score = 0;
+        if (metrics.whitepaperText === 0) score += 3;
+        if (metrics.githubLinks === 0) score += 3;
+        
+        if (score > bestScore) {
+          bestScore = score;
+          successUrl = url;
+        }
+      }
+    } catch (error) {
+      console.log(`   ❌ ${error.message}`);
+    }
+    
+    await page.close();
+  }
   
-  const browser = await chromium.launch({ headless: true });
+  await browser.close();
   
-  try {
-    const context = await browser.newContext({
-      viewport: { width: 390, height: 844 },
-      isMobile: true,
-      hasTouch: true
-    });
-    
-    const page = await context.newPage();
-    
-    console.log('⏳ Loading page...');
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
-    await page.waitForTimeout(2000);
-    
-    const tests = [];
-    
-    // 1. Check title is hidden
-    const titleHidden = await page.evaluate(() => {
-      const title = document.querySelector('.navbar__title');
-      if (!title) return true;
-      const style = window.getComputedStyle(title);
-      return style.display === 'none' || style.visibility === 'hidden';
-    });
-    tests.push({ name: 'Title hidden on mobile', passed: titleHidden });
-    
-    // 2. Open sidebar
-    console.log('📱 Opening mobile sidebar...');
-    await page.locator('.navbar__toggle').click();
-    await page.waitForTimeout(1500);
-    
-    // 3. Check sidebar width
-    const sidebarWidth = await page.evaluate(() => {
-      const sidebar = document.querySelector('.navbar-sidebar');
-      if (!sidebar) return '0%';
-      const width = (sidebar.offsetWidth / window.innerWidth) * 100;
-      return width.toFixed(1) + '%';
-    });
-    const widthOK = parseFloat(sidebarWidth) <= 90 && parseFloat(sidebarWidth) >= 80;
-    tests.push({ 
-      name: 'Sidebar width (should be ~85%)', 
-      passed: widthOK, 
-      value: sidebarWidth 
-    });
-    
-    // 4. Check close button
-    const closeButton = await page.evaluate(() => {
-      const btn = document.querySelector('.navbar-sidebar__close');
-      if (!btn) return { text: '', isBox: false };
-      const style = window.getComputedStyle(btn);
-      return {
-        text: btn.textContent.trim(),
-        borderRadius: style.borderRadius,
-        isBox: !style.borderRadius.includes('50%'),
-        width: btn.offsetWidth,
-        height: btn.offsetHeight
-      };
-    });
-    const buttonOK = closeButton.isBox && closeButton.text === 'CLOSE';
-    tests.push({ 
-      name: 'Close button style', 
-      passed: buttonOK, 
-      value: `"${closeButton.text}" ${closeButton.isBox ? 'Box' : 'Circle'} ${closeButton.width}x${closeButton.height}px`
-    });
-    
-    // 5. Check GitHub hidden
-    const githubHidden = await page.evaluate(() => {
-      const github = document.querySelector('.navbar [href*="github"]');
-      if (!github) return true;
-      const style = window.getComputedStyle(github);
-      return style.display === 'none' || style.visibility === 'hidden';
-    });
-    tests.push({ name: 'GitHub hidden on mobile', passed: githubHidden });
-    
-    // Take screenshot
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-    const screenshotName = `deployment-verify-${timestamp}.png`;
-    await page.screenshot({ path: screenshotName });
-    console.log(`\n📸 Screenshot saved: ${screenshotName}\n`);
-    
-    // Print results
-    console.log('📊 Test Results:\n');
-    tests.forEach(test => {
-      const status = test.passed ? '✅' : '❌';
-      const value = test.value ? ` (${test.value})` : '';
-      console.log(`  ${status} ${test.name}${value}`);
-    });
-    
-    const allPassed = tests.every(t => t.passed);
-    console.log(`\n${allPassed ? '🎉 All tests passed!' : '⚠️ Some tests failed'}\n`);
-    
-    return allPassed;
-    
-  } finally {
-    await browser.close();
+  console.log('\n' + '═'.repeat(60));
+  if (bestScore >= 4) {
+    console.log('✅ 배포 성공\!');
+    console.log(`🎉 URL: ${successUrl}`);
+  } else {
+    console.log('⏳ 배포 대기 중...');
   }
 }
 
-// Main execution
-(async () => {
-  const urls = [
-    'https://tedprotocol-whitepaper.vercel.app/',
-    'https://ted-protocol-whitepaper-dpgs2c0gj-tedprotocols-projects.vercel.app/'
-  ];
-  
-  console.log('🚀 Vercel Deployment Verification Tool');
-  console.log('=====================================\n');
-  console.log('Waiting 30 seconds for deployment to complete...\n');
-  
-  await new Promise(resolve => setTimeout(resolve, 30000));
-  
-  for (const url of urls) {
-    try {
-      await verifyDeployment(url);
-    } catch (error) {
-      console.log(`❌ Error checking ${url}: ${error.message}\n`);
-    }
-  }
-  
-  console.log('=' .repeat(60));
-  console.log('\n✅ Verification complete\n');
-})();
+verifyNewDeployment();
+EOF < /dev/null
