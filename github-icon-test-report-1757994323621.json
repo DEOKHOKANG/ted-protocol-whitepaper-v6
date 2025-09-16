@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-09-16T03:44:58.896Z",
+  "tests": [
+    {
+      "environment": "local",
+      "device": "iPhone 12",
+      "githubIconVisible": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "environment": "local",
+      "device": "Samsung Galaxy S21",
+      "githubIconVisible": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "environment": "local",
+      "device": "Desktop",
+      "githubIconVisible": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "environment": "vercel",
+      "device": "iPhone 12",
+      "githubIconVisible": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "environment": "vercel",
+      "device": "Samsung Galaxy S21",
+      "githubIconVisible": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "environment": "vercel",
+      "device": "Desktop",
+      "githubIconVisible": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "improvements": []
+}

@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-09-16T10:42:25.254Z",
+  "url": "https://ted-protocol-whitepaper-dpgs2c0gj-tedprotocols-projects.vercel.app",
+  "tests": [
+    {
+      "id": "MOB-001",
+      "name": "Whitepaper Text Hidden",
+      "expected": 0,
+      "actual": 9,
+      "passed": false,
+      "severity": "critical"
+    },
+    {
+      "id": "MOB-002",
+      "name": "GitHub Links Hidden on Mobile",
+      "expected": 0,
+      "actual": 2,
+      "passed": false,
+      "severity": "critical"
+    },
+    {
+      "id": "MOB-003",
+      "name": "Custom Hamburger Menu",
+      "expected": "custom hamburger visible",
+      "actual": "기본 Docusaurus 햄버거만 존재",
+      "passed": false,
+      "severity": "critical"
+    },
+    {
+      "id": "MOB-004",
+      "name": "Navigation Consistency",
+      "expected": "5-15 menu items",
+      "actual": "11 items",
+      "passed": true,
+      "severity": "major"
+    },
+    {
+      "id": "MOB-005",
+      "name": "Language Selector Unification",
+      "expected": "1 dropdown",
+      "actual": "1 dropdowns",
+      "passed": true,
+      "severity": "major"
+    },
+    {
+      "id": "DESK-001",
+      "name": "Desktop Layout",
+      "expected": "GitHub visible, hamburger hidden",
+      "actual": "GitHub: visible, Hamburger: hidden",
+      "passed": true,
+      "severity": "major"
+    }
+  ],
+  "iteration": 1,
+  "status": "failed"
+}

@@ -1,0 +1,1745 @@
+{
+  "timestamp": "2025-09-15T15:13:53.116Z",
+  "pages": [
+    {
+      "name": "executive-summary",
+      "path": "/",
+      "english": {
+        "textLength": 6420,
+        "headerCount": 17,
+        "codeBlockCount": 0,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "TED Protocol Whitepaper V1.0"
+          },
+          {
+            "level": "H2",
+            "text": "Executive Summary​"
+          },
+          {
+            "level": "H3",
+            "text": "The DeFi Investment Revolution​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol at a Glance"
+          },
+          {
+            "level": "H3",
+            "text": "Our Mission​"
+          },
+          {
+            "level": "H3",
+            "text": "Key Value Propositions​"
+          },
+          {
+            "level": "H3",
+            "text": "The Problem We Solve​"
+          },
+          {
+            "level": "H3",
+            "text": "Our Solution​"
+          },
+          {
+            "level": "H3",
+            "text": "Market Opportunity​"
+          },
+          {
+            "level": "H3",
+            "text": "Competitive Advantages​"
+          },
+          {
+            "level": "H3",
+            "text": "Competitive Comparison"
+          },
+          {
+            "level": "H3",
+            "text": "Token Economics​"
+          },
+          {
+            "level": "H3",
+            "text": "Roadmap Highlights​"
+          },
+          {
+            "level": "H3",
+            "text": "Investment Thesis​"
+          },
+          {
+            "level": "H3",
+            "text": "Calculate Your Potential Returns​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol ROI Calculator"
+          },
+          {
+            "level": "H3",
+            "text": "Ready to Get Started?​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 3920,
+        "headerCount": 17,
+        "codeBlockCount": 0,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "TED Protocol 백서 V1.0"
+          },
+          {
+            "level": "H2",
+            "text": "개요​"
+          },
+          {
+            "level": "H3",
+            "text": "DeFi 투자 혁명​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol 한 눈에 보기"
+          },
+          {
+            "level": "H3",
+            "text": "우리의 미션​"
+          },
+          {
+            "level": "H3",
+            "text": "핵심 가치 제안​"
+          },
+          {
+            "level": "H3",
+            "text": "우리가 해결하는 문제​"
+          },
+          {
+            "level": "H3",
+            "text": "우리의 솔루션​"
+          },
+          {
+            "level": "H3",
+            "text": "시장 기회​"
+          },
+          {
+            "level": "H3",
+            "text": "경쟁 우위​"
+          },
+          {
+            "level": "H3",
+            "text": "경쟁 비교"
+          },
+          {
+            "level": "H3",
+            "text": "토큰 경제학​"
+          },
+          {
+            "level": "H3",
+            "text": "로드맵 하이라이트​"
+          },
+          {
+            "level": "H3",
+            "text": "투자 논리​"
+          },
+          {
+            "level": "H3",
+            "text": "잠재 수익 계산​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol ROI 계산기"
+          },
+          {
+            "level": "H3",
+            "text": "시작할 준비가 되셨나요?​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-38.9%",
+        "headerDiff": 0,
+        "codeBlockDiff": 0,
+        "tableDiff": 0,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": true,
+        "codeMatch": true,
+        "tableMatch": true,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "introduction",
+      "path": "/introduction",
+      "english": {
+        "textLength": 31095,
+        "headerCount": 24,
+        "codeBlockCount": 0,
+        "tableCount": 0,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Introduction"
+          },
+          {
+            "level": "H2",
+            "text": "The Evolution of Investment Access​"
+          },
+          {
+            "level": "H3",
+            "text": "Traditional Finance Barriers​"
+          },
+          {
+            "level": "H3",
+            "text": "The DeFi Promise and Reality​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol vs Traditional Investment Returns"
+          },
+          {
+            "level": "H2",
+            "text": "The TED Protocol Vision​"
+          },
+          {
+            "level": "H3",
+            "text": "Artificial Intelligence Revolution​"
+          },
+          {
+            "level": "H3",
+            "text": "Blockchain Infrastructure Maturity​"
+          },
+          {
+            "level": "H3",
+            "text": "Retail Investment Demand​"
+          },
+          {
+            "level": "H2",
+            "text": "Our Unique Approach​"
+          },
+          {
+            "level": "H3",
+            "text": "DeFi-Powered Investment Strategies​"
+          },
+          {
+            "level": "H3",
+            "text": "Blockchain-Based Trust Infrastructure​"
+          },
+          {
+            "level": "H3",
+            "text": "Regulatory-First Design​"
+          },
+          {
+            "level": "H2",
+            "text": "The Market Opportunity​"
+          },
+          {
+            "level": "H3",
+            "text": "Total Addressable Market​"
+          },
+          {
+            "level": "H3",
+            "text": "Target Demographics​"
+          },
+          {
+            "level": "H2",
+            "text": "Why Now?​"
+          },
+          {
+            "level": "H3",
+            "text": "Technology Readiness​"
+          },
+          {
+            "level": "H3",
+            "text": "Market Conditions​"
+          },
+          {
+            "level": "H3",
+            "text": "Competitive Landscape​"
+          },
+          {
+            "level": "H2",
+            "text": "Document Structure​"
+          },
+          {
+            "level": "H2",
+            "text": "The Path Forward​"
+          },
+          {
+            "level": "H2",
+            "text": "Our Commitment to Excellence​"
+          },
+          {
+            "level": "H2",
+            "text": "Final Thoughts​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 3031,
+        "headerCount": 21,
+        "codeBlockCount": 0,
+        "tableCount": 0,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "소개 : DeFi 혁명"
+          },
+          {
+            "level": "H2",
+            "text": "금융의 진화​"
+          },
+          {
+            "level": "H3",
+            "text": "전통적 금융에서 탈중앙화 금융으로​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol vs 전통적 투자 수익률 비교"
+          },
+          {
+            "level": "H2",
+            "text": "TED Protocol의 등장​"
+          },
+          {
+            "level": "H3",
+            "text": "기관급 성과​"
+          },
+          {
+            "level": "H3",
+            "text": "DeFi 접근성​"
+          },
+          {
+            "level": "H3",
+            "text": "블록체인 투명성​"
+          },
+          {
+            "level": "H2",
+            "text": "시장 기회​"
+          },
+          {
+            "level": "H3",
+            "text": "글로벌 자산 관리​"
+          },
+          {
+            "level": "H3",
+            "text": "DeFi 폭발​"
+          },
+          {
+            "level": "H3",
+            "text": "투자 혁명​"
+          },
+          {
+            "level": "H2",
+            "text": "우리의 비전​"
+          },
+          {
+            "level": "H3",
+            "text": "핵심 원칙​"
+          },
+          {
+            "level": "H2",
+            "text": "기술 스택​"
+          },
+          {
+            "level": "H3",
+            "text": "TRON 블록체인​"
+          },
+          {
+            "level": "H3",
+            "text": "투자 전략 엔진​"
+          },
+          {
+            "level": "H3",
+            "text": "스마트 컨트랙트 아키텍처​"
+          },
+          {
+            "level": "H2",
+            "text": "앞으로의 여정​"
+          },
+          {
+            "level": "H2",
+            "text": "혁명에 동참하세요​"
+          },
+          {
+            "level": "H3",
+            "text": "시작할 준비가 되셨나요?"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-90.3%",
+        "headerDiff": -3,
+        "codeBlockDiff": 0,
+        "tableDiff": 0,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": true,
+        "tableMatch": true,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "problem-statement",
+      "path": "/problem-statement",
+      "english": {
+        "textLength": 34971,
+        "headerCount": 26,
+        "codeBlockCount": 0,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Problem Statement"
+          },
+          {
+            "level": "H2",
+            "text": "The Wealth Gap Crisis​"
+          },
+          {
+            "level": "H3",
+            "text": "Institutional vs Retail Performance Disparity​"
+          },
+          {
+            "level": "H2",
+            "text": "Systemic Barriers to Entry​"
+          },
+          {
+            "level": "H3",
+            "text": "Capital Requirements​"
+          },
+          {
+            "level": "H3",
+            "text": "Geographic and Regulatory Restrictions​"
+          },
+          {
+            "level": "H3",
+            "text": "Information Asymmetry​"
+          },
+          {
+            "level": "H2",
+            "text": "DeFi's Unfulfilled Promise​"
+          },
+          {
+            "level": "H3",
+            "text": "Unsustainable Yield Mechanisms​"
+          },
+          {
+            "level": "H3",
+            "text": "Technical Complexity Barriers​"
+          },
+          {
+            "level": "H3",
+            "text": "Security and Risk Challenges​"
+          },
+          {
+            "level": "H2",
+            "text": "The Opportunity Cost​"
+          },
+          {
+            "level": "H3",
+            "text": "Quantifying Missed Returns​"
+          },
+          {
+            "level": "H3",
+            "text": "Societal Impact​"
+          },
+          {
+            "level": "H2",
+            "text": "Market Failures​"
+          },
+          {
+            "level": "H3",
+            "text": "Traditional Finance Failures​"
+          },
+          {
+            "level": "H3",
+            "text": "DeFi Protocol Failures​"
+          },
+          {
+            "level": "H2",
+            "text": "The Innovation Gap​"
+          },
+          {
+            "level": "H3",
+            "text": "Why Existing Solutions Fail​"
+          },
+          {
+            "level": "H3",
+            "text": "The Missing Solution​"
+          },
+          {
+            "level": "H2",
+            "text": "Urgency of Solution​"
+          },
+          {
+            "level": "H3",
+            "text": "Accelerating Trends​"
+          },
+          {
+            "level": "H3",
+            "text": "Window of Opportunity​"
+          },
+          {
+            "level": "H2",
+            "text": "Conclusion : The Imperative for Change​"
+          },
+          {
+            "level": "H2",
+            "text": "The Human Cost of Financial Exclusion​"
+          },
+          {
+            "level": "H2",
+            "text": "The Path to Resolution​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 813,
+        "headerCount": 8,
+        "codeBlockCount": 0,
+        "tableCount": 0,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "문제 정의 : 투자 불평등의 해결"
+          },
+          {
+            "level": "H2",
+            "text": "현재 상황​"
+          },
+          {
+            "level": "H3",
+            "text": "전통 금융의 문제점​"
+          },
+          {
+            "level": "H3",
+            "text": "DeFi의 현재 한계​"
+          },
+          {
+            "level": "H2",
+            "text": "TED Protocol의 해결책​"
+          },
+          {
+            "level": "H3",
+            "text": "민주화된 접근​"
+          },
+          {
+            "level": "H3",
+            "text": "투명한 운영​"
+          },
+          {
+            "level": "H3",
+            "text": "지속 가능한 수익​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-97.7%",
+        "headerDiff": -18,
+        "codeBlockDiff": 0,
+        "tableDiff": -1,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": true,
+        "tableMatch": false,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "tokenomics",
+      "path": "/tokenomics",
+      "english": {
+        "textLength": 18296,
+        "headerCount": 45,
+        "codeBlockCount": 8,
+        "tableCount": 7,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Tokenomics"
+          },
+          {
+            "level": "H2",
+            "text": "TEDP Token Overview​"
+          },
+          {
+            "level": "H3",
+            "text": "Token Specifications​"
+          },
+          {
+            "level": "H3",
+            "text": "TEDP Token Specifications"
+          },
+          {
+            "level": "H3",
+            "text": "Live Contract Features​"
+          },
+          {
+            "level": "H3",
+            "text": "Token Utility Framework​"
+          },
+          {
+            "level": "H3",
+            "text": "TEDP Token Economics & Distribution"
+          },
+          {
+            "level": "H2",
+            "text": "Token Distribution​"
+          },
+          {
+            "level": "H3",
+            "text": "Allocation Strategy​"
+          },
+          {
+            "level": "H3",
+            "text": "Token Distribution Strategy"
+          },
+          {
+            "level": "H3",
+            "text": "On-Chain Distribution Verification​"
+          },
+          {
+            "level": "H3",
+            "text": "Distribution Rationale​"
+          },
+          {
+            "level": "H2",
+            "text": "Token Economics Model​"
+          },
+          {
+            "level": "H3",
+            "text": "Supply and Demand Dynamics​"
+          },
+          {
+            "level": "H3",
+            "text": "Value Accrual Mechanism​"
+          },
+          {
+            "level": "H3",
+            "text": "Projected Token Metrics​"
+          },
+          {
+            "level": "H3",
+            "text": "Projected Token Metrics"
+          },
+          {
+            "level": "H2",
+            "text": "Staking Mechanism​"
+          },
+          {
+            "level": "H3",
+            "text": "Staking Tiers​"
+          },
+          {
+            "level": "H3",
+            "text": "Staking Tiers & Rewards"
+          },
+          {
+            "level": "H3",
+            "text": "Staking Rewards Calculation​"
+          },
+          {
+            "level": "H3",
+            "text": "Flexible vs Locked Staking​"
+          },
+          {
+            "level": "H2",
+            "text": "Governance Framework​"
+          },
+          {
+            "level": "H3",
+            "text": "Voting Power Calculation​"
+          },
+          {
+            "level": "H3",
+            "text": "Proposal Types​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Process​"
+          },
+          {
+            "level": "H2",
+            "text": "Revenue Model​"
+          },
+          {
+            "level": "H3",
+            "text": "Fee Structure​"
+          },
+          {
+            "level": "H3",
+            "text": "Revenue Projections​"
+          },
+          {
+            "level": "H3",
+            "text": "Sustainability Analysis​"
+          },
+          {
+            "level": "H2",
+            "text": "Token Launch Strategy​"
+          },
+          {
+            "level": "H3",
+            "text": "Launch Phases​"
+          },
+          {
+            "level": "H3",
+            "text": "Liquidity Strategy​"
+          },
+          {
+            "level": "H2",
+            "text": "Comparative Analysis​"
+          },
+          {
+            "level": "H3",
+            "text": "Token Model Comparison​"
+          },
+          {
+            "level": "H3",
+            "text": "Competitive Advantages​"
+          },
+          {
+            "level": "H2",
+            "text": "Risk Mitigation​"
+          },
+          {
+            "level": "H3",
+            "text": "Token Price Stability​"
+          },
+          {
+            "level": "H3",
+            "text": "Regulatory Compliance​"
+          },
+          {
+            "level": "H2",
+            "text": "Advanced Contract Architecture​"
+          },
+          {
+            "level": "H3",
+            "text": "Modular Security Design​"
+          },
+          {
+            "level": "H3",
+            "text": "Liquidity Management​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Integration​"
+          },
+          {
+            "level": "H2",
+            "text": "Technical Performance Metrics​"
+          },
+          {
+            "level": "H3",
+            "text": "Risk Management Framework​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 1434,
+        "headerCount": 20,
+        "codeBlockCount": 0,
+        "tableCount": 3,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "토큰경제학 : TEDP 생태계"
+          },
+          {
+            "level": "H2",
+            "text": "TEDP 토큰 개요​"
+          },
+          {
+            "level": "H3",
+            "text": "TEDP 토큰 경제학 및 분배"
+          },
+          {
+            "level": "H3",
+            "text": "토큰 기본 정보​"
+          },
+          {
+            "level": "H3",
+            "text": "TEDP 토큰 사양"
+          },
+          {
+            "level": "H2",
+            "text": "토큰 분배​"
+          },
+          {
+            "level": "H3",
+            "text": "공정한 출시​"
+          },
+          {
+            "level": "H3",
+            "text": "토큰 분배 전략"
+          },
+          {
+            "level": "H3",
+            "text": "베스팅 일정​"
+          },
+          {
+            "level": "H2",
+            "text": "유틸리티 기능​"
+          },
+          {
+            "level": "H3",
+            "text": "1. 거버넌스​"
+          },
+          {
+            "level": "H3",
+            "text": "2. 스테이킹 보상​"
+          },
+          {
+            "level": "H3",
+            "text": "3. 수수료 할인​"
+          },
+          {
+            "level": "H3",
+            "text": "스테이킹 등급 및 보상"
+          },
+          {
+            "level": "H2",
+            "text": "가치 축적 메커니즘​"
+          },
+          {
+            "level": "H3",
+            "text": "토큰 소각​"
+          },
+          {
+            "level": "H3",
+            "text": "수익 분배​"
+          },
+          {
+            "level": "H2",
+            "text": "경제 모델​"
+          },
+          {
+            "level": "H3",
+            "text": "수익 창출​"
+          },
+          {
+            "level": "H3",
+            "text": "지속 가능성​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-92.2%",
+        "headerDiff": -25,
+        "codeBlockDiff": -8,
+        "tableDiff": -4,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": false,
+        "tableMatch": false,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "technology",
+      "path": "/technology",
+      "english": {
+        "textLength": 19189,
+        "headerCount": 39,
+        "codeBlockCount": 37,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Technology Architecture"
+          },
+          {
+            "level": "H2",
+            "text": "TRON Blockchain Infrastructure​"
+          },
+          {
+            "level": "H3",
+            "text": "Why TRON?​"
+          },
+          {
+            "level": "H3",
+            "text": "Technical Advantages​"
+          },
+          {
+            "level": "H2",
+            "text": "Advanced Investment Engine​"
+          },
+          {
+            "level": "H3",
+            "text": "Architecture Overview​"
+          },
+          {
+            "level": "H3",
+            "text": "Data Collection Layer​"
+          },
+          {
+            "level": "H3",
+            "text": "Feature Engineering​"
+          },
+          {
+            "level": "H3",
+            "text": "Machine Learning Models​"
+          },
+          {
+            "level": "H3",
+            "text": "Risk Management System​"
+          },
+          {
+            "level": "H2",
+            "text": "TEDP Smart Contract Architecture​"
+          },
+          {
+            "level": "H3",
+            "text": "Production Contract Analysis​"
+          },
+          {
+            "level": "H3",
+            "text": "Ecosystem Smart Contracts​"
+          },
+          {
+            "level": "H3",
+            "text": "Production Security Implementation​"
+          },
+          {
+            "level": "H2",
+            "text": "Infrastructure Components​"
+          },
+          {
+            "level": "H3",
+            "text": "Oracle Network​"
+          },
+          {
+            "level": "H3",
+            "text": "API Gateway​"
+          },
+          {
+            "level": "H3",
+            "text": "Monitoring System​"
+          },
+          {
+            "level": "H2",
+            "text": "Scalability Solutions​"
+          },
+          {
+            "level": "H3",
+            "text": "Horizontal Scaling​"
+          },
+          {
+            "level": "H3",
+            "text": "Vertical Optimization​"
+          },
+          {
+            "level": "H3",
+            "text": "Future Enhancements​"
+          },
+          {
+            "level": "H2",
+            "text": "Development Stack​"
+          },
+          {
+            "level": "H3",
+            "text": "Backend​"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contracts​"
+          },
+          {
+            "level": "H3",
+            "text": "Frontend​"
+          },
+          {
+            "level": "H3",
+            "text": "DevOps​"
+          },
+          {
+            "level": "H2",
+            "text": "Security Measures​"
+          },
+          {
+            "level": "H3",
+            "text": "Code Security​"
+          },
+          {
+            "level": "H3",
+            "text": "Operational Security​"
+          },
+          {
+            "level": "H3",
+            "text": "Network Security​"
+          },
+          {
+            "level": "H2",
+            "text": "Advanced Technical Infrastructure​"
+          },
+          {
+            "level": "H3",
+            "text": "TRON Network Integration​"
+          },
+          {
+            "level": "H3",
+            "text": "AI/ML Infrastructure Architecture​"
+          },
+          {
+            "level": "H3",
+            "text": "Performance Optimization​"
+          },
+          {
+            "level": "H3",
+            "text": "Monitoring and Alerting​"
+          },
+          {
+            "level": "H3",
+            "text": "Development and Testing Framework​"
+          },
+          {
+            "level": "H3",
+            "text": "Compliance and Security Framework​"
+          },
+          {
+            "level": "H3",
+            "text": "Future Technology Roadmap​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 1309,
+        "headerCount": 8,
+        "codeBlockCount": 1,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "기술 아키텍처"
+          },
+          {
+            "level": "H2",
+            "text": "TRON 블록체인 인프라​"
+          },
+          {
+            "level": "H3",
+            "text": "TRON을 선택한 이유​"
+          },
+          {
+            "level": "H3",
+            "text": "기술적 장점​"
+          },
+          {
+            "level": "H2",
+            "text": "고급 투자 엔진​"
+          },
+          {
+            "level": "H3",
+            "text": "아키텍처 개요​"
+          },
+          {
+            "level": "H3",
+            "text": "데이터 수집 레이어​"
+          },
+          {
+            "level": "H3",
+            "text": "위험 관리 시스템​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-93.2%",
+        "headerDiff": -31,
+        "codeBlockDiff": -36,
+        "tableDiff": 0,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": false,
+        "tableMatch": true,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "governance",
+      "path": "/governance",
+      "english": {
+        "textLength": 22429,
+        "headerCount": 39,
+        "codeBlockCount": 31,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Governance Model"
+          },
+          {
+            "level": "H2",
+            "text": "Decentralized Autonomous Organization​"
+          },
+          {
+            "level": "H3",
+            "text": "Current Governance State​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Evolution Pathway​"
+          },
+          {
+            "level": "H2",
+            "text": "Governance Structure​"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contract Governance Integration​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Process​"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contract Security and Multi-Signature Integr"
+          },
+          {
+            "level": "H2",
+            "text": "Governance Incentives​"
+          },
+          {
+            "level": "H3",
+            "text": "Participation Rewards​"
+          },
+          {
+            "level": "H3",
+            "text": "Penalty Mechanisms​"
+          },
+          {
+            "level": "H2",
+            "text": "Smart Contract Parameter Governance​"
+          },
+          {
+            "level": "H3",
+            "text": "Currently Adjustable Parameters​"
+          },
+          {
+            "level": "H3",
+            "text": "Immutable Core Protections​"
+          },
+          {
+            "level": "H3",
+            "text": "Future Governance Parameters​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Implementation Timeline​"
+          },
+          {
+            "level": "H3",
+            "text": "Parameter Change Process​"
+          },
+          {
+            "level": "H2",
+            "text": "Treasury Management​"
+          },
+          {
+            "level": "H3",
+            "text": "Revenue Streams​"
+          },
+          {
+            "level": "H3",
+            "text": "Allocation Framework​"
+          },
+          {
+            "level": "H3",
+            "text": "Investment Policy​"
+          },
+          {
+            "level": "H2",
+            "text": "Proposal Categories​"
+          },
+          {
+            "level": "H3",
+            "text": "Core Proposals​"
+          },
+          {
+            "level": "H3",
+            "text": "Economic Proposals​"
+          },
+          {
+            "level": "H3",
+            "text": "Strategic Proposals​"
+          },
+          {
+            "level": "H2",
+            "text": "Governance Evolution​"
+          },
+          {
+            "level": "H3",
+            "text": "Progressive Decentralization​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Upgrades​"
+          },
+          {
+            "level": "H2",
+            "text": "Conflict Resolution​"
+          },
+          {
+            "level": "H3",
+            "text": "Dispute Process​"
+          },
+          {
+            "level": "H3",
+            "text": "Emergency Procedures​"
+          },
+          {
+            "level": "H2",
+            "text": "Transparency Commitments​"
+          },
+          {
+            "level": "H3",
+            "text": "Public Reporting​"
+          },
+          {
+            "level": "H3",
+            "text": "Open Communication​"
+          },
+          {
+            "level": "H2",
+            "text": "Governance Security and Compliance​"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contract Governance Security​"
+          },
+          {
+            "level": "H3",
+            "text": "Decentralization Roadmap Implementation​"
+          },
+          {
+            "level": "H3",
+            "text": "Legal and Regulatory Framework​"
+          },
+          {
+            "level": "H3",
+            "text": "Governance Analytics and Reporting​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 564,
+        "headerCount": 7,
+        "codeBlockCount": 1,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "거버넌스 모델"
+          },
+          {
+            "level": "H2",
+            "text": "탈중앙화 자율 조직​"
+          },
+          {
+            "level": "H2",
+            "text": "거버넌스 구조​"
+          },
+          {
+            "level": "H3",
+            "text": "토큰 기반 투표​"
+          },
+          {
+            "level": "H3",
+            "text": "거버넌스 프로세스​"
+          },
+          {
+            "level": "H2",
+            "text": "거버넌스 인센티브​"
+          },
+          {
+            "level": "H3",
+            "text": "참여 보상​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-97.5%",
+        "headerDiff": -32,
+        "codeBlockDiff": -30,
+        "tableDiff": 0,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": false,
+        "tableMatch": true,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "roadmap",
+      "path": "/roadmap",
+      "english": {
+        "textLength": 21702,
+        "headerCount": 44,
+        "codeBlockCount": 31,
+        "tableCount": 1,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Roadmap & Vision"
+          },
+          {
+            "level": "H2",
+            "text": "Executive Vision​"
+          },
+          {
+            "level": "H2",
+            "text": "Development Roadmap​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol Development Timeline"
+          },
+          {
+            "level": "H3",
+            "text": "Phase 1 : Foundation (Q1-Q2 2025) - IN PROGRESS​"
+          },
+          {
+            "level": "H3",
+            "text": "Phase 2 : Launch (Q3 2025)​"
+          },
+          {
+            "level": "H3",
+            "text": "Phase 3 : Growth (Q4 2025 - Q2 2026)​"
+          },
+          {
+            "level": "H3",
+            "text": "Phase 4 : Scale (Q3 2026 - Q2 2027)​"
+          },
+          {
+            "level": "H2",
+            "text": "Technical Roadmap​"
+          },
+          {
+            "level": "H3",
+            "text": "Q1-Q2 2025 : Foundation Infrastructure 🔄 IN PROGR"
+          },
+          {
+            "level": "H3",
+            "text": "Q3 2025 : Platform Launch​"
+          },
+          {
+            "level": "H3",
+            "text": "Q4 2025 : Enhancement Phase​"
+          },
+          {
+            "level": "H3",
+            "text": "Q1-Q2 2026 : Integration Phase​"
+          },
+          {
+            "level": "H2",
+            "text": "Product Roadmap​"
+          },
+          {
+            "level": "H3",
+            "text": "Current Products Status​"
+          },
+          {
+            "level": "H3",
+            "text": "Upcoming Products​"
+          },
+          {
+            "level": "H2",
+            "text": "Blockchain Expansion​"
+          },
+          {
+            "level": "H3",
+            "text": "Current Support​"
+          },
+          {
+            "level": "H3",
+            "text": "Planned Integrations​"
+          },
+          {
+            "level": "H2",
+            "text": "Partnership Strategy​"
+          },
+          {
+            "level": "H3",
+            "text": "Strategic Partnerships​"
+          },
+          {
+            "level": "H3",
+            "text": "Regional Expansion​"
+          },
+          {
+            "level": "H2",
+            "text": "Research & Development​"
+          },
+          {
+            "level": "H3",
+            "text": "AI Research​"
+          },
+          {
+            "level": "H3",
+            "text": "Blockchain Innovation​"
+          },
+          {
+            "level": "H2",
+            "text": "Community Growth​"
+          },
+          {
+            "level": "H3",
+            "text": "User Acquisition​"
+          },
+          {
+            "level": "H3",
+            "text": "Growth Metrics Timeline"
+          },
+          {
+            "level": "H3",
+            "text": "Community Programs​"
+          },
+          {
+            "level": "H2",
+            "text": "Regulatory Roadmap​"
+          },
+          {
+            "level": "H3",
+            "text": "Compliance Milestones​"
+          },
+          {
+            "level": "H2",
+            "text": "Implementation Progress Tracking​"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contract Deployment Status​"
+          },
+          {
+            "level": "H3",
+            "text": "Real-Time Success Metrics​"
+          },
+          {
+            "level": "H3",
+            "text": "Future Development Milestones​"
+          },
+          {
+            "level": "H3",
+            "text": "Technology Stack Evolution​"
+          },
+          {
+            "level": "H3",
+            "text": "Risk Management and Contingency Planning​"
+          },
+          {
+            "level": "H3",
+            "text": "Performance Benchmarking​"
+          },
+          {
+            "level": "H2",
+            "text": "Long-term Vision: The Decentralized Financial Futu"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contract Evolution Pathway​"
+          },
+          {
+            "level": "H3",
+            "text": "Global Financial Infrastructure Vision​"
+          },
+          {
+            "level": "H3",
+            "text": "Technology Singularity Integration​"
+          },
+          {
+            "level": "H3",
+            "text": "Ecosystem Completion Metrics​"
+          },
+          {
+            "level": "H3",
+            "text": "Legacy and Impact Statement​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 1328,
+        "headerCount": 8,
+        "codeBlockCount": 0,
+        "tableCount": 0,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "로드맵 & 비전"
+          },
+          {
+            "level": "H2",
+            "text": "경영진 비전​"
+          },
+          {
+            "level": "H2",
+            "text": "개발 로드맵​"
+          },
+          {
+            "level": "H3",
+            "text": "TED Protocol 개발 타임라인"
+          },
+          {
+            "level": "H3",
+            "text": "1단계: 기반 구축 (2024년 4분기)​"
+          },
+          {
+            "level": "H3",
+            "text": "2단계: 성장 (2025년 1-2분기)​"
+          },
+          {
+            "level": "H3",
+            "text": "3단계: 규모 확장 (2025년 3-4분기)​"
+          },
+          {
+            "level": "H3",
+            "text": "4단계: 시장 지배 (2026년)​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-93.9%",
+        "headerDiff": -36,
+        "codeBlockDiff": -31,
+        "tableDiff": -1,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": false,
+        "tableMatch": false,
+        "componentMatch": true
+      }
+    },
+    {
+      "name": "risk-disclosure",
+      "path": "/risk-disclosure",
+      "english": {
+        "textLength": 5370,
+        "headerCount": 28,
+        "codeBlockCount": 0,
+        "tableCount": 0,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "Risk Disclosure & Legal Notice"
+          },
+          {
+            "level": "H2",
+            "text": "Important Notice​"
+          },
+          {
+            "level": "H2",
+            "text": "Investment Risks​"
+          },
+          {
+            "level": "H3",
+            "text": "High Risk Investment​"
+          },
+          {
+            "level": "H3",
+            "text": "No Guarantee of Returns​"
+          },
+          {
+            "level": "H3",
+            "text": "Performance Disclaimers​"
+          },
+          {
+            "level": "H2",
+            "text": "Regulatory Risks​"
+          },
+          {
+            "level": "H3",
+            "text": "Uncertain Regulatory Environment​"
+          },
+          {
+            "level": "H3",
+            "text": "Compliance Responsibility​"
+          },
+          {
+            "level": "H2",
+            "text": "Technical Risks​"
+          },
+          {
+            "level": "H3",
+            "text": "Smart Contract Risk​"
+          },
+          {
+            "level": "H3",
+            "text": "Platform Risk​"
+          },
+          {
+            "level": "H2",
+            "text": "Market Risks​"
+          },
+          {
+            "level": "H3",
+            "text": "Volatility Risk​"
+          },
+          {
+            "level": "H3",
+            "text": "Strategy Risk​"
+          },
+          {
+            "level": "H2",
+            "text": "Operational Risks​"
+          },
+          {
+            "level": "H3",
+            "text": "Counterparty Risk​"
+          },
+          {
+            "level": "H3",
+            "text": "Team Risk​"
+          },
+          {
+            "level": "H2",
+            "text": "Token-Specific Risks​"
+          },
+          {
+            "level": "H3",
+            "text": "Token Value Risk​"
+          },
+          {
+            "level": "H3",
+            "text": "Distribution Risk​"
+          },
+          {
+            "level": "H2",
+            "text": "Legal Disclaimers​"
+          },
+          {
+            "level": "H3",
+            "text": "Not Investment Advice​"
+          },
+          {
+            "level": "H3",
+            "text": "No Warranties or Representations​"
+          },
+          {
+            "level": "H3",
+            "text": "Limitation of Liability​"
+          },
+          {
+            "level": "H3",
+            "text": "Forward-Looking Statements​"
+          },
+          {
+            "level": "H2",
+            "text": "Risk Mitigation Measures​"
+          },
+          {
+            "level": "H2",
+            "text": "Conclusion​"
+          }
+        ]
+      },
+      "korean": {
+        "textLength": 1237,
+        "headerCount": 12,
+        "codeBlockCount": 0,
+        "tableCount": 0,
+        "componentCount": 0,
+        "headers": [
+          {
+            "level": "H1",
+            "text": "위험 공개 및 법적 고지"
+          },
+          {
+            "level": "H2",
+            "text": "중요 공지​"
+          },
+          {
+            "level": "H2",
+            "text": "투자 위험​"
+          },
+          {
+            "level": "H3",
+            "text": "고위험 투자​"
+          },
+          {
+            "level": "H3",
+            "text": "수익 보장 없음​"
+          },
+          {
+            "level": "H3",
+            "text": "성과 면책조항​"
+          },
+          {
+            "level": "H2",
+            "text": "규제 위험​"
+          },
+          {
+            "level": "H3",
+            "text": "불확실한 규제 환경​"
+          },
+          {
+            "level": "H2",
+            "text": "기술적 위험​"
+          },
+          {
+            "level": "H3",
+            "text": "스마트 컨트랙트 위험​"
+          },
+          {
+            "level": "H2",
+            "text": "법적 면책조항​"
+          },
+          {
+            "level": "H3",
+            "text": "투자 조언이 아님​"
+          }
+        ]
+      },
+      "differences": {
+        "textLengthDiff": "-77.0%",
+        "headerDiff": -16,
+        "codeBlockDiff": 0,
+        "tableDiff": 0,
+        "componentDiff": 0
+      },
+      "status": {
+        "lengthMatch": false,
+        "structureMatch": false,
+        "codeMatch": true,
+        "tableMatch": true,
+        "componentMatch": true
+      }
+    }
+  ]
+}

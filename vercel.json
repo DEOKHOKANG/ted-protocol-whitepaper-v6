@@ -1,0 +1,85 @@
+{
+  "buildCommand": "rm -rf build .docusaurus && npm run build",
+  "outputDirectory": "build",
+  "framework": "docusaurus-2",
+  "installCommand": "npm ci --force",
+  "env": {
+    "FORCE_REBUILD": "2025-09-16-20-00-success-standard",
+    "DISABLE_CACHE": "true",
+    "DEPLOYMENT_ID": "recursive-improvement-v2.0",
+    "NODE_ENV": "production",
+    "CACHE_BUSTER": "nuclear-v3.0.0"
+  },
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--max-old-space-size=4096",
+      "FORCE_COLOR": "1"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma", 
+          "value": "no-cache"
+        },
+        {
+          "key": "Expires",
+          "value": "0"
+        },
+        {
+          "key": "X-Nuclear-Cache-Buster",
+          "value": "v3.0.0-nuclear"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding, User-Agent"
+        }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate, max-age=0"
+        },
+        {
+          "key": "X-Force-Fresh",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "source": "/**/*.css",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate, max-age=0"
+        }
+      ]
+    },
+    {
+      "source": "/**/*.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate, max-age=0"
+        }
+      ]
+    }
+  ]
+}

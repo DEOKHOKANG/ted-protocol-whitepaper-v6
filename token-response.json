@@ -1,0 +1,29 @@
+{
+    "result": {
+        "id": "cc923f47e37a03d61b910dcd46ecf9aa",
+        "name": "TED Protocol Pages Deploy",
+        "status": "active",
+        "issued_on": "2025-09-16T01:52:56Z",
+        "modified_on": "2025-09-16T01:52:56Z",
+        "last_used_on": null,
+        "value": "XyHBgwFg9VWtIZuEFzT9yJodaQTq72xolrUXM4YW",
+        "policies": [
+            {
+                "id": "a3dd2000c1a24af18a3c177ce7e24f39",
+                "effect": "allow",
+                "resources": {
+                    "com.cloudflare.api.account.*": "*"
+                },
+                "permission_groups": [
+                    {
+                        "id": "8d28297797f24fb8a0c332fe0866ec89",
+                        "name": "Pages Write"
+                    }
+                ]
+            }
+        ]
+    },
+    "success": true,
+    "errors": [],
+    "messages": []
+}

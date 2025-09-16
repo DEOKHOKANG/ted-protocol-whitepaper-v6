@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-09-16T02:40:15.405Z",
+  "tests": [
+    {
+      "url": "https://tedprotocol-whitepaper.vercel.app",
+      "device": "iPhone 12",
+      "timestamp": "2025-09-16T02:40:21.301Z",
+      "tests": {
+        "hamburgerVisible": true,
+        "hamburgerClickable": true,
+        "sidebarMenuItems": 2,
+        "languageSelectorVisible": false
+      },
+      "screenshot": "mobile-iPhone-12-1757990423921.png"
+    },
+    {
+      "url": "https://tedprotocol-whitepaper.vercel.app",
+      "device": "Samsung Galaxy S21",
+      "timestamp": "2025-09-16T02:40:28.725Z",
+      "tests": {
+        "hamburgerVisible": true,
+        "hamburgerClickable": true,
+        "sidebarMenuItems": 2,
+        "languageSelectorVisible": false
+      },
+      "screenshot": "mobile-Samsung-Galaxy-S21-1757990431316.png"
+    },
+    {
+      "url": "https://tedprotocol-whitepaper.vercel.app",
+      "device": "Desktop",
+      "timestamp": "2025-09-16T02:40:35.554Z",
+      "tests": {
+        "noPurpleHover": true
+      },
+      "screenshot": "desktop-1757990436658.png"
+    },
+    {
+      "url": "http://localhost:3400",
+      "device": "iPhone 12",
+      "timestamp": "2025-09-16T02:40:41.514Z",
+      "tests": {
+        "hamburgerVisible": true,
+        "hamburgerClickable": true,
+        "sidebarMenuItems": 2,
+        "languageSelectorVisible": true,
+        "languageDropdownWorks": true
+      },
+      "screenshot": "mobile-iPhone-12-1757990445195.png"
+    },
+    {
+      "url": "http://localhost:3400",
+      "device": "Samsung Galaxy S21",
+      "timestamp": "2025-09-16T02:40:50.066Z",
+      "tests": {
+        "hamburgerVisible": true,
+        "hamburgerClickable": true,
+        "sidebarMenuItems": 2,
+        "languageSelectorVisible": true,
+        "languageDropdownWorks": true
+      },
+      "screenshot": "mobile-Samsung-Galaxy-S21-1757990453728.png"
+    },
+    {
+      "url": "http://localhost:3400",
+      "device": "Desktop",
+      "timestamp": "2025-09-16T02:40:57.776Z",
+      "tests": {
+        "noPurpleHover": true
+      },
+      "screenshot": "desktop-1757990458863.png"
+    }
+  ],
+  "failures": [
+    {
+      "device": "iPhone 12",
+      "test": "Language selector visibility",
+      "error": "Language selector not visible"
+    },
+    {
+      "device": "Samsung Galaxy S21",
+      "test": "Language selector visibility",
+      "error": "Language selector not visible"
+    }
+  ],
+  "improvements": [
+    {
+      "issue": "Language selector not visible on mobile",
+      "fix": "Ensure .navbar__items--right has display: flex !important;"
+    },
+    {
+      "issue": "Language selector not visible on mobile",
+      "fix": "Ensure .navbar__items--right has display: flex !important;"
+    }
+  ]
+}

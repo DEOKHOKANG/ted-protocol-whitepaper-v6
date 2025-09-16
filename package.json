@@ -1,0 +1,58 @@
+{
+  "name": "ted-whitepaper-mobile-optimized",
+  "version": "6.0.1-deployment-standard",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.8.1",
+    "@docusaurus/preset-classic": "3.8.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mdx-js/react": "^3.0.0",
+    "chart.js": "^4.5.0",
+    "clsx": "^2.0.0",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.544.0",
+    "playwright": "^1.55.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^19.0.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.16.0",
+    "recharts": "^3.2.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.8.1",
+    "@docusaurus/tsconfig": "3.8.1",
+    "@docusaurus/types": "3.8.1",
+    "typescript": "~5.6.2",
+    "wrangler": "^4.37.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}

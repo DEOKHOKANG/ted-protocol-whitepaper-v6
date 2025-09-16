@@ -1,0 +1,377 @@
+/**
+ * TED Protocol Premium Whitepaper Theme
+ * World-class design for token documentation
+ */
+
+/* Import Premium Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+
+/* Premium Color Palette */
+:root {
+  /* Primary Brand Colors */
+  --ifm-color-primary: #6B46C1;
+  --ifm-color-primary-dark: #553C9A;
+  --ifm-color-primary-darker: #4C3687;
+  --ifm-color-primary-darkest: #3E2C6F;
+  --ifm-color-primary-light: #9F7AEA;
+  --ifm-color-primary-lighter: #B794F4;
+  --ifm-color-primary-lightest: #D6BCFA;
+  
+  /* TED Protocol Custom Colors */
+  --ted-royal-purple: #6B46C1;
+  --ted-deep-purple: #553C9A;
+  --ted-light-purple: #9F7AEA;
+  --ted-purple-gradient: linear-gradient(135deg, #6B46C1 0%, #9F7AEA 100%);
+  --ted-gold: #F59E0B;
+  --ted-gold-gradient: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%);
+  
+  /* Premium Neutrals */
+  --premium-black: #0A0E27;
+  --premium-dark: #1A1F3A;
+  --premium-gray: #8892B0;
+  --premium-light: #F6F8FF;
+  --premium-white: #FFFFFF;
+  
+  /* Glass Effects */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
+  /* Typography */
+  --ifm-font-family-base: 'Inter', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-font-weight: 800;
+  
+  /* Spacing */
+  --ifm-spacing-horizontal: 2rem;
+  --ifm-navbar-height: 80px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.24);
+  --shadow-glow: 0 0 40px rgba(107, 70, 193, 0.3);
+  
+  /* Animations */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --docusaurus-highlighted-code-line-bg: rgba(107, 70, 193, 0.1);
+}
+
+/* Premium Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem 0;
+}
+
+/* Premium Hero Section */
+.hero {
+  background: linear-gradient(180deg, var(--premium-light) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 8rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glass Cards */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* ================================================
+   MOBILE NAVIGATION FIXES - RECURSIVE IMPROVEMENT
+   HIGHEST PRIORITY WITH MAXIMUM SPECIFICITY
+   ================================================ */
+
+@media screen and (max-width: 996px) {
+  /* 1. HIDE WHITEPAPER TITLE - ABSOLUTE PRIORITY */
+  .navbar__title,
+  .navbar__brand .navbar__title,
+  .navbar__brand b,
+  .navbar__brand span,
+  .navbar__logo + *,
+  [class*="navbar__title"],
+  .navbar-title,
+  .navbar .navbar__title {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -99999px !important;
+    top: -99999px !important;
+    pointer-events: none !important;
+    user-select: none !important;
+    z-index: -9999 !important;
+  }
+  
+  /* 2. HIDE GITHUB ICON - ABSOLUTE PRIORITY */
+  [href*="github"],
+  [href*="GitHub"],
+  .navbar [href*="github"],
+  .navbar__item [href*="github"],
+  .navbar__items [href*="github"],
+  .navbar__items--right [href*="github"],
+  .navbar__link[href*="github"],
+  a[href*="github.com"],
+  a[href*="github.io"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -99999px !important;
+  }
+  
+  /* 3. SIDEBAR WIDTH - ABSOLUTE PRIORITY */
+  .navbar-sidebar,
+  .navbar-sidebar--show,
+  div.navbar-sidebar,
+  aside.navbar-sidebar,
+  [class*="navbar-sidebar"]:not([class*="__"]) {
+    width: 85% !important;
+    max-width: 320px !important;
+    min-width: 280px !important;
+  }
+  
+  /* Override any inline styles */
+  .navbar-sidebar[style] {
+    width: 85% !important;
+    max-width: 320px !important;
+    min-width: 280px !important;
+  }
+  
+  /* 4. CLOSE BUTTON BOX STYLE - ABSOLUTE PRIORITY */
+  .navbar-sidebar__close,
+  button.navbar-sidebar__close,
+  [class*="navbar-sidebar__close"],
+  .navbar-sidebar .navbar-sidebar__close {
+    /* Reset all styles first */
+    all: unset !important;
+    
+    /* Apply box button styles */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    min-width: 80px !important;
+    max-width: 100px !important;
+    height: 36px !important;
+    padding: 8px 20px !important;
+    margin: 1rem !important;
+    
+    /* Visual styles */
+    background: #6B46C1 !important;
+    background-color: #6B46C1 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(107, 70, 193, 0.3) !important;
+    
+    /* Text styles */
+    color: white !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    
+    /* Interactive */
+    cursor: pointer !important;
+    transition: all 0.2s !important;
+  }
+  
+  /* Hover effect */
+  .navbar-sidebar__close:hover {
+    background: #553C9A !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(107, 70, 193, 0.4) !important;
+  }
+  
+  /* Hide all default content */
+  .navbar-sidebar__close * {
+    display: none !important;
+  }
+  
+  /* Force CLOSE text */
+  .navbar-sidebar__close::before {
+    content: "CLOSE" !important;
+    display: block !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Hide SVG and other elements */
+  .navbar-sidebar__close svg,
+  .navbar-sidebar__close img,
+  .navbar-sidebar__close span,
+  .navbar-sidebar__close i,
+  .navbar-sidebar__close path,
+  .navbar-sidebar__close::after {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+/* ULTRA-HIGH SPECIFICITY OVERRIDES */
+@media (max-width: 996px) {
+  html body .navbar .navbar__inner .navbar__items .navbar__brand .navbar__title {
+    display: none !important;
+  }
+  
+  html body .navbar .navbar__inner .navbar__items--right [href*="github"] {
+    display: none !important;
+  }
+  
+  html body .navbar-sidebar {
+    width: 85% !important;
+    max-width: 320px !important;
+  }
+  
+  html body .navbar-sidebar .navbar-sidebar__close {
+    min-width: 80px !important;
+    height: 36px !important;
+    border-radius: 6px !important;
+    background: #6B46C1 !important;
+  }
+  
+  html body .navbar-sidebar .navbar-sidebar__close::before {
+    content: "CLOSE" !important;
+    color: white !important;
+  }
+}
+
+/* JAVASCRIPT FALLBACK STYLES */
+.mobile-title-hidden .navbar__title {
+  display: none !important;
+}
+
+.mobile-github-hidden [href*="github"] {
+  display: none !important;
+}
+
+.mobile-sidebar-fixed .navbar-sidebar {
+  width: 85% !important;
+  max-width: 320px !important;
+}
+
+.mobile-close-fixed .navbar-sidebar__close::before {
+  content: "CLOSE" !important;
+}
+
+/* Force cache invalidation: 2025-09-16 14:50 KST */
+
+/* ================================================
+   RECURSIVE IMPROVEMENT v2.0 - PRODUCTION FIX
+   TARGET: https://ted-protocol-whitepaper-dpgs2c0gj-tedprotocols-projects.vercel.app/
+   ================================================ */
+
+@media screen and (max-width: 996px) {
+  /* MOB-001: Complete Whitepaper Text Elimination */
+  *:not(script):not(style):not(meta):not(title):not(link) {
+    &:has-text("Whitepaper"),
+    &:contains("Whitepaper") {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  }
+  
+  .navbar__title:has-text("Whitepaper"),
+  .navbar__brand *:has-text("Whitepaper"),
+  b:has-text("Whitepaper"),
+  span:has-text("Whitepaper"),
+  strong:has-text("Whitepaper") {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    font-size: 0 !important;
+  }
+
+  /* MOB-002: GitHub Links Complete Removal on Mobile */
+  a[href*="github" i],
+  a[href*="git" i][href*="hub" i],
+  .header-github-link,
+  .navbar__link[aria-label*="GitHub" i],
+  [class*="github" i] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* MOB-003: Custom Hamburger Priority */
+  #mobile-hamburger-btn {
+    display: block !important;
+    visibility: visible !important;
+    position: fixed !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    z-index: 999999 !important;
+    width: 48px !important;
+    height: 48px !important;
+    background: var(--ted-royal-purple) !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+  }
+
+  /* Hide default hamburger completely */
+  .navbar__toggle,
+  button.navbar__toggle {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* MOB-004: Navigation Consistency */
+  .navbar-sidebar .menu__list-item {
+    padding: 0.75rem 1rem !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+  }
+
+  /* MOB-005: Language Selector Unification */
+  .navbar__item.dropdown:nth-child(2),
+  .navbar__items .dropdown:last-child {
+    display: none !important;
+  }
+}
+
+/* RECURSIVE IMPROVEMENT v2.1 - JavaScript Injection Points */
+[data-mobile-hidden="whitepaper"],
+[data-mobile-hidden="github"],
+[data-recursive-fix="mob-001"],
+[data-recursive-fix="mob-002"],
+[data-recursive-fix="mob-003"] {
+  display: none !important;
+}
+
+/* Import mobile overrides with highest priority */
+@import './mobile-override.css';

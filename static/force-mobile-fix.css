@@ -1,0 +1,141 @@
+/* FORCE MOBILE FIX - HIGHEST PRIORITY */
+@media screen and (max-width: 996px) {
+  /* 1. Hide Whitepaper/TED Protocol title */
+  .navbar__title,
+  .navbar__brand b,
+  .navbar__brand span:not(.navbar__logo),
+  .navbar__brand > :not(.navbar__logo):not(.navbar__toggle),
+  .navbar__inner .navbar__title {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    left: -99999px !important;
+  }
+  
+  /* 2. Optimize sidebar width to 75% */
+  .navbar-sidebar,
+  .navbar-sidebar--show,
+  .navbar-sidebar[style],
+  div.navbar-sidebar,
+  aside.navbar-sidebar {
+    width: 75% !important;
+    max-width: 280px !important;
+    min-width: 240px !important;
+  }
+  
+  /* 3. Redesign close button as compact box */
+  .navbar-sidebar__close,
+  button.navbar-sidebar__close,
+  .navbar-sidebar__close[style] {
+    all: unset !important;
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    padding: 0 !important;
+    margin: 1rem !important;
+    background: #6B46C1 !important;
+    background-color: #6B46C1 !important;
+    border-radius: 6px !important;
+    border: none !important;
+    box-shadow: 0 2px 6px rgba(107, 70, 193, 0.3) !important;
+    color: white !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+  }
+  
+  /* Hide all child elements in close button */
+  .navbar-sidebar__close * {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Add CLOSE text with ::after */
+  .navbar-sidebar__close::after {
+    content: "CLOSE" !important;
+    position: absolute !important;
+    display: block !important;
+    color: white !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 32px !important;
+    pointer-events: none !important;
+  }
+  
+  /* Remove ::before if exists */
+  .navbar-sidebar__close::before {
+    display: none !important;
+  }
+  
+  /* Hover state */
+  .navbar-sidebar__close:hover,
+  .navbar-sidebar__close:active {
+    background: #553C9A !important;
+    transform: scale(0.98) !important;
+  }
+  
+  /* 4. Hide GitHub link */
+  [href*="github"],
+  .navbar__item[href*="github"],
+  .navbar__items--right [href*="github"],
+  .navbar [href*="github"] {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  /* 5. Optimize menu items */
+  .navbar-sidebar .menu__list {
+    padding: 0.5rem !important;
+  }
+  
+  .navbar-sidebar .menu__link {
+    padding: 0.75rem 1rem !important;
+    font-size: 14px !important;
+    border-radius: 6px !important;
+  }
+  
+  .navbar-sidebar .menu__link--active {
+    background: rgba(107, 70, 193, 0.1) !important;
+    color: #6B46C1 !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Ultra specific overrides */
+@media (max-width: 996px) {
+  html body .navbar .navbar__inner .navbar__items .navbar__brand b,
+  html body .navbar .navbar__inner .navbar__items .navbar__brand .navbar__title {
+    display: none !important;
+  }
+  
+  html body .navbar-sidebar {
+    width: 75% !important;
+    max-width: 280px !important;
+  }
+  
+  html body .navbar-sidebar .navbar-sidebar__close::after {
+    content: "CLOSE" !important;
+  }
+}
