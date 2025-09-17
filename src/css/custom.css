@@ -373,6 +373,9 @@
   display: none !important;
 }
 
+/* Import Mobile Minimum Width - CRITICAL PRIORITY */
+@import './mobile-minimum-width.css';
+
 /* Import Hybrid Responsive System - PC to Mobile Complete Solution */
 @import './hybrid-responsive.css';
 
