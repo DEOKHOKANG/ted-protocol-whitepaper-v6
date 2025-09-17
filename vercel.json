@@ -4,11 +4,11 @@
   "framework": "docusaurus-2",
   "installCommand": "npm ci --force",
   "env": {
-    "FORCE_REBUILD": "2025-09-16-20-00-success-standard",
+    "FORCE_REBUILD": "2025-09-17-06-27-recursive-fix",
     "DISABLE_CACHE": "true",
-    "DEPLOY_VERSION": "recursive-improvement-v2.0",
+    "DEPLOY_VERSION": "recursive-improvement-v3.0",
     "NODE_ENV": "production",
-    "CACHE_BUSTER": "nuclear-v3.0.0"
+    "CACHE_BUSTER": "force-mobile-v3-20250917"
   },
   "build": {
     "env": {

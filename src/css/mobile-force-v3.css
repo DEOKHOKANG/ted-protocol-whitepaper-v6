@@ -1,0 +1,164 @@
+/**
+ * MOBILE FORCE FIX v3.0
+ * 2025-09-17 06:26 KST
+ * 
+ * 강제 모바일 최적화 - 최종 버전
+ */
+
+/* ================================================
+   ULTRA-HIGH PRIORITY MOBILE FIXES
+   ================================================ */
+
+@media screen and (max-width: 996px) {
+  /* 1. WHITEPAPER 텍스트 완전 제거 */
+  .navbar__title,
+  .navbar__brand b,
+  .navbar__brand strong,
+  .navbar__brand span:not(.navbar__logo),
+  b:not(:has(img)),
+  strong:not(:has(img)) {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -99999px !important;
+    pointer-events: none !important;
+    user-select: none !important;
+  }
+  
+  /* 2. GITHUB 링크 완전 제거 */
+  a[href*="github"],
+  a[href*="GitHub"],
+  .navbar a[href*="github"],
+  .navbar__items a[href*="github"],
+  .navbar__items--right a[href*="github"],
+  .header-github-link,
+  [class*="github"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    left: -99999px !important;
+  }
+  
+  /* 3. 가로 스크롤 강제 방지 */
+  html,
+  body,
+  #__docusaurus,
+  .main-wrapper,
+  .container,
+  main {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+  
+  * {
+    max-width: 100vw !important;
+  }
+  
+  /* 4. 네비바 높이 고정 */
+  .navbar {
+    height: 60px !important;
+    min-height: 60px !important;
+    max-height: 60px !important;
+  }
+  
+  .main-wrapper {
+    padding-top: 60px !important;
+  }
+  
+  /* 5. 햄버거 메뉴 강제 표시 */
+  .navbar__toggle {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+  
+  /* 6. 사이드바 너비 고정 */
+  .navbar-sidebar {
+    width: 85% !important;
+    max-width: 320px !important;
+    min-width: 280px !important;
+  }
+  
+  /* 7. 사이드바 닫기 버튼 */
+  .navbar-sidebar__close {
+    all: unset !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    min-width: 80px !important;
+    height: 36px !important;
+    padding: 8px 20px !important;
+    margin: 1rem !important;
+    background: #6B46C1 !important;
+    border-radius: 6px !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+  }
+  
+  .navbar-sidebar__close::before {
+    content: "CLOSE" !important;
+    color: white !important;
+  }
+  
+  .navbar-sidebar__close * {
+    display: none !important;
+  }
+}
+
+/* 초소형 디바이스 (374px 이하) */
+@media screen and (max-width: 374px) {
+  .navbar {
+    height: 56px !important;
+    padding: 0 12px !important;
+  }
+  
+  .navbar__logo {
+    height: 28px !important;
+  }
+  
+  .navbar__toggle {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .main-wrapper {
+    padding-top: 56px !important;
+  }
+}
+
+/* JavaScript 폴백 클래스 */
+.force-mobile-optimized .navbar__title {
+  display: none !important;
+}
+
+.force-mobile-optimized a[href*="github"] {
+  display: none !important;
+}
+
+.force-mobile-optimized .navbar-sidebar {
+  width: 85% !important;
+  max-width: 320px !important;
+}
+
+/* 캐시 버스터: 2025-09-17-0626-KST */

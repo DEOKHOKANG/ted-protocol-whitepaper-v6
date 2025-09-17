@@ -288,21 +288,32 @@
   content: "CLOSE" !important;
 }
 
-/* Force cache invalidation: 2025-09-16 14:50 KST */
+/* Force cache invalidation: 2025-09-17 06:24 KST - RECURSIVE FIX */
 
 /* ================================================
-   RECURSIVE IMPROVEMENT v2.0 - PRODUCTION FIX
-   TARGET: https://ted-protocol-whitepaper-dpgs2c0gj-tedprotocols-projects.vercel.app/
+   RECURSIVE IMPROVEMENT v3.0 - FORCE MOBILE FIX
+   2025-09-17 06:25 KST
    ================================================ */
 
 @media screen and (max-width: 996px) {
-  /* MOB-001: Complete Whitepaper Text Elimination */
-  *:not(script):not(style):not(meta):not(title):not(link) {
-    &:has-text("Whitepaper"),
-    &:contains("Whitepaper") {
-      display: none !important;
-      visibility: hidden !important;
-    }
+  /* FORCE: Absolute Whitepaper Elimination - Round 3 */
+  .navbar__title,
+  .navbar__brand > *:not(.navbar__logo),
+  b:contains("Whitepaper"),
+  span:contains("Whitepaper"),
+  [class*="title"]:not(.docTitle_DOKW) {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -99999px !important;
   }
   
   .navbar__title:has-text("Whitepaper"),
@@ -317,15 +328,21 @@
     font-size: 0 !important;
   }
 
-  /* MOB-002: GitHub Links Complete Removal on Mobile */
+  /* FORCE: GitHub Links Complete Removal - Round 3 */
   a[href*="github" i],
-  a[href*="git" i][href*="hub" i],
   .header-github-link,
   .navbar__link[aria-label*="GitHub" i],
-  [class*="github" i] {
+  [class*="github" i],
+  .navbar__items--right > a[href*="github"],
+  .navbar__items > a[href*="github"] {
     display: none !important;
     visibility: hidden !important;
+    opacity: 0 !important;
     pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   /* MOB-003: Custom Hamburger Priority */
@@ -390,3 +407,6 @@
 
 /* Import mobile overrides with highest priority */
 @import './mobile-override.css';
+
+/* Import FORCE mobile fixes - ABSOLUTE HIGHEST PRIORITY */
+@import './mobile-force-v3.css';
