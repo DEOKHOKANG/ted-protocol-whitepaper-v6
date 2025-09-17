@@ -373,6 +373,9 @@
   display: none !important;
 }
 
+/* Import Header Consistency - HIGHEST PRIORITY */
+@import './header-consistency.css';
+
 /* Import Mobile Minimum Width - CRITICAL PRIORITY */
 @import './mobile-minimum-width.css';
 
